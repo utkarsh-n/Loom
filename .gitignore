@@ -1,0 +1,39 @@
+Loom.xcodeproj/
+.build/
+DerivedData/
+*.xcuserstate
+* 2.*
+* 2/
+.DS_Store
+__pycache__/
+*.pyc
+# Qwen3-4B (2.3 GB) is cloned in by Tools/build.sh, never committed
+Loom/Resources/Qwen/*
+!Loom/Resources/Qwen/README.md
+# Shared explanation checkpoints are provisioned outside the iCloud source tree.
+Loom/Resources/Models/*
+!Loom/Resources/Models/README.md
+
+# Public source snapshot: keep credentials and local data out of Git.
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.mobileprovision
+*.xcuserstate
+xcuserdata/
+.build/
+DerivedData/
+build/
+Build/
+node_modules/
+*.xcresult/
+*.log
+*.safetensors
+*.gguf
+*.ipsw
+*.pcap
+*.pcapng
